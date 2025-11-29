@@ -1,4 +1,7 @@
 package com.ms.hogwarts.students.dtos;
 
-public record SortingResponseDto(String house) {
+public record SortingResponseDto(
+        String house,
+        String aiMessage
+) {
 }

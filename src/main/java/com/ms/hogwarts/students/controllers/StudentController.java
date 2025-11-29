@@ -27,7 +27,8 @@ public class StudentController {
     }
     @PostMapping
     public ResponseEntity<StudentModel> saveUser(@RequestBody @Valid StudentRequestDto studentRequesrDto) {
-
+        //TODO: Gerar a casa e a mensagem a ser enviada pro front
+        //TODO: Salvar o student com a casa e mandar pro serviço de gerar a carta
         var studentModel = new StudentModel();
         BeanUtils.copyProperties(studentRequesrDto, studentModel);
         var userSave = studentService.save(studentModel);
